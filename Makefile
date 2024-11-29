@@ -15,6 +15,14 @@ SRCS = ft_atoi.c \
 	   ft_memcpy.c \
 	   ft_memmove.c \
 	   ft_memset.c \
+	   ft_printf.c \
+	   ft_printf_srcs/address_conversion.c \
+	   ft_printf_srcs/char_conversion.c \
+	   ft_printf_srcs/dec_nbr_conversion.c \
+	   ft_printf_srcs/hex_lo_conversion.c \
+	   ft_printf_srcs/hex_up_conversion.c \
+	   ft_printf_srcs/string_conversion.c \
+	   ft_printf_srcs/uns_nbr_conversion.c \
 	   ft_putchar_fd.c \
 	   ft_putendl_fd.c \
 	   ft_putnbr_fd.c \
