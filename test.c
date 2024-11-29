@@ -16,6 +16,7 @@ int main()
 		if (line)
 			ft_printf("Iteration %d, line: %sMemory address: %p\n", iteration, line, line);
 		free(line);
+		iteration++;
 	}
 	close(fd);
 	return 0;
