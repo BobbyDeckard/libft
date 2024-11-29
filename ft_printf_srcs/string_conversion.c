@@ -6,11 +6,11 @@
 /*   By: imeulema <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:41:42 by imeulema          #+#    #+#             */
-/*   Updated: 2024/10/29 12:56:46 by imeulema         ###   ########.fr       */
+/*   Updated: 2024/11/29 11:00:23 by imeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../incl/ft_printf.h"
+#include "../libft.h"
 
 void	string_conversion(va_list *args, int *ptr)
 {

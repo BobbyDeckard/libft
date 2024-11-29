@@ -6,11 +6,11 @@
 /*   By: imeulema <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:41:18 by imeulema          #+#    #+#             */
-/*   Updated: 2024/10/25 13:14:22 by imeulema         ###   ########.fr       */
+/*   Updated: 2024/11/29 11:00:29 by imeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../incl/ft_printf.h"
+#include "../libft.h"
 
 void	ft_putuns_printf(unsigned int n, int *ptr)
 {

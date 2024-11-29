@@ -6,11 +6,11 @@
 /*   By: imeulema <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:47:10 by imeulema          #+#    #+#             */
-/*   Updated: 2024/10/29 12:56:36 by imeulema         ###   ########.fr       */
+/*   Updated: 2024/11/29 11:00:09 by imeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../incl/ft_printf.h"
+#include "../libft.h"
 
 static void	ft_putnbr_hex_printf(unsigned int n, int *ptr, char *base)
 {
