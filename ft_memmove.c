@@ -25,7 +25,9 @@ static int	verify_overlap(void *dst, const void *src, size_t len)
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*dst_cast;
+	unsigned char	*src_cast;
 
 	if (!src && !dst)
 		return (NULL);
@@ -33,9 +35,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		ft_memcpy(dst, src, len);
 	else
 	{
+		dst_cast = (unsigned char *) dst;
+		src_cast = (unsigned char *) src;
 		i = len;
 		while (--i < len)
-			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+			dst_cast[i] = src_cast[i];
 	}
 	return (dst);
 }
