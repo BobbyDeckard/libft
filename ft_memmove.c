@@ -18,7 +18,7 @@ static int	verify_overlap(void *dst, const void *src, size_t len)
 
 	i = -1;
 	while (++i < len)
-		if (dst == &src[i])
+		if (dst == src + i)
 			return (1);
 	return (0);
 }

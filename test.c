@@ -1,23 +1,17 @@
 #include "libft.h"
-#include <fcntl.h>
 
 int main()
 {
-	int		fd;
-	int		iteration;
-	char	*line;
-
-	fd = open("file.txt", O_RDONLY);
-	line = "blabla";
-	iteration = 0;
-	while (line)
-	{
-		line = get_next_line(fd);
-		if (line)
-			ft_printf("Iteration %d, line: %sMemory address: %p\n", iteration, line, line);
-		free(line);
-		iteration++;
-	}
-	close(fd);
+	char	*str;
+	char	*test;
+	str = (char *) malloc(10);
+	if (!str)
+		return 1;
+	str = "Hello";
+	test = str + 3;
+	ft_putstr_fd("Test", 1);
+	//ft_printf("Manually obtained address: %p\n", str + 4);
+	//ft_printf("Address obtained through ft_memchr: %p\n", ft_memchr(str, 'o', 5));
+	ft_printf("Copy done by memmove with overlap: %s", ft_memmove(test, str, 5));
 	return 0;
 }
